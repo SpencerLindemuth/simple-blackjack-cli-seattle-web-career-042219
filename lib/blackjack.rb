@@ -51,11 +51,12 @@ def initial_round
   return hand_total
 end
 
-def hit?(current_hand)
+def hit?(current_hand, dealer_hand)
   # code hit? here
   prompt_user
   action = get_user_input
   if action == 's'
+    check_win(current_hand, dealer_hand)
     return current_hand
   elsif action == 'h'
     new_card = deal_card
