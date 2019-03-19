@@ -86,6 +86,8 @@ def check_win(dealer, player)
       dealer_wins(dealer, player)
   elsif(dealer < player && player <= 21)
       player_wins(player, dealer)
+    end
+  end
 
 #####################################################
 # get every test to pass before coding runner below #
