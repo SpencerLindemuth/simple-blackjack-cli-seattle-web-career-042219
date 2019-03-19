@@ -103,7 +103,7 @@ def runner
   dealer_total = initial_round
   display_dealer_total(dealer_total)
   while card_total <= 21
-    card_total = hit?(card_total)
+    card_total = hit?(card_total, dealer_total)
     display_card_total(card_total)
     dealer_total = dealer_hit?(dealer_total)
     display_dealer_total(dealer_total)
